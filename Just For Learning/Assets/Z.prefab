@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4071355854075550514}
   - component: {fileID: 976456300533312330}
+  - component: {fileID: 3798463879664649113}
   - component: {fileID: 5270457711465207680}
   - component: {fileID: 3097539854456107704}
   - component: {fileID: 7231787798890890675}
-  - component: {fileID: 3798463879664649113}
+  - component: {fileID: 6556036012422755834}
   m_Layer: 0
   m_Name: Z
   m_TagString: Untagged
@@ -95,6 +96,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &3798463879664649113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6907333033554844253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8f94a755c18e649a9610cc5cb72352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!114 &5270457711465207680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +199,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9505365, y: 0.77033496}
   m_EdgeRadius: 0
---- !u!114 &3798463879664649113
+--- !u!114 &6556036012422755834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,6 +208,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6907333033554844253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8f94a755c18e649a9610cc5cb72352, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3798463879664649113}
+          m_TargetAssemblyTypeName: ZCollectScript, Assembly-CSharp
+          m_MethodName: CollectSelf
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

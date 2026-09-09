@@ -2,15 +2,9 @@ using UnityEngine;
 
 public class ZCollectScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void CollectSelf()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ZManagerScript.OnCollectZ?.Invoke();
+        Destroy(gameObject);
     }
 }
