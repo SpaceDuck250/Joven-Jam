@@ -1,5 +1,6 @@
 {
-    "name": "InputSystem_Actions",
+    "version": 1,
+    "name": "InputActions",
     "maps": [
         {
             "name": "Player",
@@ -986,6 +987,34 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Main",
+            "id": "92574d8e-1b15-4fff-9318-c84bdfceebda",
+            "actions": [
+                {
+                    "name": "click",
+                    "type": "Button",
+                    "id": "25d2af57-fb18-4e31-908c-a9574255e0fe",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ba957571-56e6-47e7-a1cd-44c70250aca1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
