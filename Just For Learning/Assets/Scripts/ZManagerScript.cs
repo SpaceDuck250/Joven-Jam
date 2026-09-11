@@ -13,11 +13,16 @@ public class ZManagerScript : MonoBehaviour
         zAmountLeft = 0;
 
         OnCollectZ += CollectZ;
+
+        PlacerManagerScript.OnPlacePlaceable += OnPlace;
     }
 
     private void OnDestroy()
     {
         OnCollectZ -= CollectZ;
+
+        PlacerManagerScript.OnPlacePlaceable -= OnPlace;
+
     }
 
     public void CollectZ()
@@ -38,4 +43,19 @@ public class ZManagerScript : MonoBehaviour
         OnAmountZChanged?.Invoke(zAmountLeft);
 
     }
+
+    public void OnPlace(PlaceableStats placeable, bool placed)
+    {
+        if (zAmountLeft < placeable.selfCost || !placed)
+        {
+            return;
+        }
+
+        zAmountLeft -= placeable.selfCost;
+
+        OnAmountZChanged?.Invoke(zAmountLeft);
+    }
+
+
+
 }

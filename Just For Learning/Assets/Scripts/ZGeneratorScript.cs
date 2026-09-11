@@ -31,7 +31,7 @@ public class ZGeneratorScript : MonoBehaviour
 
     public void SpawnZ()
     {
-        GameObject newZ = Instantiate(zPrefab, spawnPoint.position, Quaternion.identity);
+        GameObject newZ = Instantiate(zPrefab, spawnPoint.position + new Vector3(0, 0, -1), Quaternion.identity);
 
         newZ.GetComponent<ZAnimatorScript>().DoJumpAnim();
 

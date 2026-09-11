@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f7cb312093b8d48baf013856774c29, type: 3}
-  m_Name: MermaidBulletWeak
-  m_EditorClassIdentifier: Assembly-CSharp::BulletStartStats
-  damageAmount: 1
-  flySpeed: 10
-  bulletSprite: {fileID: 21300000, guid: ba08b4ca8784aa2469e326d98e7f57c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bf8727c8477b094181052f6582a4e7c, type: 3}
+  m_Name: MermaidStats
+  m_EditorClassIdentifier: Assembly-CSharp::PlaceableStats
   selfSelectSprite: {fileID: 21300000, guid: 415ad44f9a897eb4ca4423221b1f0acd, type: 3}
   selfPrefab: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
   selfName: Mermaid

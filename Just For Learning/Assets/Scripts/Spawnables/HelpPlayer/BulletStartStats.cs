@@ -8,4 +8,6 @@ public class BulletStartStats : ScriptableObject
     public float flySpeed;
 
     public Sprite bulletSprite;
+
+
 }
