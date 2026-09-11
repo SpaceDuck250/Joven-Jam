@@ -15,4 +15,5 @@ public class HitOnCollisionScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
