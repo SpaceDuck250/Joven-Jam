@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2003603645283355092
+--- !u!1001 &914171217998632933
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2801956529375362974, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.826504
+      value: 0.2847753
       objectReference: {fileID: 0}
     - target: {fileID: 2801956529375362974, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.576471
+      value: -1.6091651
       objectReference: {fileID: 0}
     - target: {fileID: 2801956529375362974, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -50,23 +50,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6368877159535048021, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_Name
-      value: TeddySprite
+      value: Pillow
       objectReference: {fileID: 0}
     - target: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_Name
-      value: TedTheBear Variant
+      value: PillowObj Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7068882746252823471, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.57
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7068882746252823471, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.57
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7068882746252823471, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.57
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7068882746252823471, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 8576280869031072874, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc73591bfc2d86647a3a608ab5fcd2b5, type: 3}
+      objectReference: {fileID: 21300000, guid: 7076e69dee18d6647a35dd55a7714cae, type: 3}
     m_RemovedComponents:
     - {fileID: 4046012870693366688, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
     m_RemovedGameObjects: []
@@ -83,71 +83,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8462008426909066202}
+      addedObject: {fileID: 8129226600413613328}
     - targetCorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2997091508754648994}
-    - targetCorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      addedObject: {fileID: 6886570166832193294}
+    - targetCorrespondingSourceObject: {fileID: 6368877159535048021, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3493863158537058102}
-    - targetCorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2381897924698193417}
+      addedObject: {fileID: 7240099598425234276}
   m_SourcePrefab: {fileID: 100100000, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
---- !u!1 &4703252528341838969 stripped
+--- !u!1 &6110546769586594480 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
-  m_PrefabInstance: {fileID: 2003603645283355092}
+  m_CorrespondingSourceObject: {fileID: 6368877159535048021, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+  m_PrefabInstance: {fileID: 914171217998632933}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8462008426909066202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703252528341838969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87568b6af5046fa47bb80c66151a4862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleEnemyMove
-  moveDirectionAmount: -4
-  rb: {fileID: 2997091508754648994}
-  canMove: 1
---- !u!50 &2997091508754648994
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703252528341838969}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!61 &3493863158537058102
+--- !u!61 &7240099598425234276
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703252528341838969}
+  m_GameObject: {fileID: 6110546769586594480}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -171,35 +126,62 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.064041555}
+  m_Offset: {x: 0.1381774, y: -0.14349198}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.7866666, y: 3.4133334}
+    newSize: {x: 4.31, y: 4.66}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.5635654}
+  m_Size: {x: 2.2560878, y: 2.4460926}
   m_EdgeRadius: 0
---- !u!114 &2381897924698193417
+--- !u!1 &6207293196125270600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+  m_PrefabInstance: {fileID: 914171217998632933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8129226600413613328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703252528341838969}
+  m_GameObject: {fileID: 6207293196125270600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5616847a3da50834d86c3241f9b9313c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f66dbd6c505b424b99764d768d4abd3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HitOnCollisionScript
-  targetTag: Enemy
-  damage: 10
-  moveScript: {fileID: 0}
-  obstacleTag: 
+  m_EditorClassIdentifier: '::'
+  timer: 0
+  dieTime: 5
+  animator: {fileID: 6886570166832193294}
+  deathAnimName: Dead
+--- !u!95 &6886570166832193294
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207293196125270600}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 42036846bd1c77b4fa7088eb5eac8cf1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

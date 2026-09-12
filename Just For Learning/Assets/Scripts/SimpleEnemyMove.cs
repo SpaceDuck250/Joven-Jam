@@ -3,6 +3,8 @@ using UnityEngine;
 public class SimpleEnemyMove : MonoBehaviour
 {
     public float moveDirectionAmount;
+
+    public Rigidbody2D rb;
     public bool canMove = true;
 
     private void Update()
@@ -12,7 +14,8 @@ public class SimpleEnemyMove : MonoBehaviour
             return;
         }
 
-        transform.position += Time.deltaTime * moveDirectionAmount * Vector3.right;
+        //transform.position += Time.deltaTime * moveDirectionAmount * Vector3.right;
+        rb.linearVelocity = Vector3.right * moveDirectionAmount;
     }
 
 
