@@ -29,9 +29,10 @@ public class SimpleSpawnerScript : MonoBehaviour
         {
             if (Random.value <= spawnChancePerPoint)
             {
+                float offsetAmount = Random.Range(0, offsetRange);
                 int ranVal = Random.Range(0, enemyList.Count);
                 GameObject randomEnemy = enemyList[ranVal];
-                Instantiate(randomEnemy, spawnPoint.position + (Vector3.left * offsetRange), Quaternion.identity);
+                Instantiate(randomEnemy, spawnPoint.position + (Vector3.left * offsetAmount), Quaternion.identity);
             }
         }
     }

@@ -101,6 +101,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2801956529375362974}
   - component: {fileID: 4046012870693366688}
+  - component: {fileID: 5977124831624952089}
+  - component: {fileID: 4370824411244187469}
   m_Layer: 0
   m_Name: MermaidTurretObj
   m_TagString: Untagged
@@ -147,3 +149,41 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   firePoint: {fileID: 2801956529375362974}
+--- !u!114 &5977124831624952089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524437846018696621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f66dbd6c505b424b99764d768d4abd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeTimerScript
+  timer: 0
+  dieTime: 70
+  animator: {fileID: 4370824411244187469}
+  deathAnimName: MermaidDead
+--- !u!95 &4370824411244187469
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524437846018696621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e47de4383497a644db1a45d6674cfe77, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
