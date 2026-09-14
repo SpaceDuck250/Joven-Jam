@@ -8,6 +8,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786317769045717715, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.93289065
+      objectReference: {fileID: 0}
+    - target: {fileID: 786317769045717715, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1346292
+      objectReference: {fileID: 0}
+    - target: {fileID: 786317769045717715, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.026675105
+      objectReference: {fileID: 0}
+    - target: {fileID: 786317769045717715, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.07268894
+      objectReference: {fileID: 0}
+    - target: {fileID: 786317769045717715, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 786317769045717715, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.04
+      objectReference: {fileID: 0}
     - target: {fileID: 2801956529375362974, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.826504
@@ -48,6 +72,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4370824411244187469, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 42036846bd1c77b4fa7088eb5eac8cf1, type: 2}
     - target: {fileID: 6368877159535048021, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_Name
       value: TeddySprite
@@ -89,11 +117,16 @@ PrefabInstance:
       addedObject: {fileID: 2997091508754648994}
     - targetCorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3493863158537058102}
+      addedObject: {fileID: 2381897924698193417}
     - targetCorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2381897924698193417}
+      addedObject: {fileID: 5623754965419774455}
   m_SourcePrefab: {fileID: 100100000, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+--- !u!95 &2839083345296098969 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4370824411244187469, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+  m_PrefabInstance: {fileID: 2003603645283355092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4703252528341838969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
@@ -141,52 +174,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!61 &3493863158537058102
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4703252528341838969}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.064041555}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.5635654}
-  m_EdgeRadius: 0
 --- !u!114 &2381897924698193417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,5 +188,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HitOnCollisionScript
   targetTag: Enemy
   damage: 10
-  moveScript: {fileID: 0}
-  obstacleTag: 
+--- !u!114 &5623754965419774455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703252528341838969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f66dbd6c505b424b99764d768d4abd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeTimerScript
+  timer: 0
+  dieTime: 4
+  animator: {fileID: 2839083345296098969}
+  deathAnimName: Dead

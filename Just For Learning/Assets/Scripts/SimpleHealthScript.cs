@@ -3,7 +3,9 @@ using System;
 
 public class SimpleHealthScript : MonoBehaviour
 {
-    private float health;
+    public float health => _health;
+
+    private float _health;
     public float maxHealth;
     public event Action<float, float> OnHealthChanged;
     public event Action OnDead;
@@ -12,19 +14,19 @@ public class SimpleHealthScript : MonoBehaviour
 
     private void Start()
     {
-        health = maxHealth;
+        _health = maxHealth;
     }
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        if (health <= 0)
+        _health -= damage;
+        if (_health <= 0)
         {
-            health = 0;
+            _health = 0;
             Die();
         }
 
-        OnHealthChanged?.Invoke(health, -damage);
+        OnHealthChanged?.Invoke(_health, -damage);
     }
 
     public void Heal(float healAmount)
@@ -34,13 +36,13 @@ public class SimpleHealthScript : MonoBehaviour
             return;
         }
 
-        health += healAmount;
-        if (health >= maxHealth)
+        _health += healAmount;
+        if (_health >= maxHealth)
         {
-            health = maxHealth;
+            _health = maxHealth;
         }
 
-        OnHealthChanged?.Invoke(health, healAmount);
+        OnHealthChanged?.Invoke(_health, healAmount);
     }
 
     public void Die()

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Wave 2
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
   waveName: Wave 2
-  newEnemiesToAddList: []
+  newEnemiesToAddList:
+  - {fileID: 8819755366848283952, guid: 8b31f178201e364458045ccc527c9e1f, type: 3}
   spawnInterval: 3
   spawnChancePerPoint: 0.7
+  enemyKillRequirementThisWave: 0
