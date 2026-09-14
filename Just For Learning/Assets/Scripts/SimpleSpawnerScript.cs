@@ -6,7 +6,7 @@ public class SimpleSpawnerScript : MonoBehaviour
     public List<GameObject> enemyList = new List<GameObject>();
     public List<Transform> spawnPointList = new List<Transform>();
 
-    public float timer;
+    private float timer;
     public float spawnTime;
 
     public float spawnChancePerPoint;
@@ -29,7 +29,7 @@ public class SimpleSpawnerScript : MonoBehaviour
         {
             if (Random.value <= spawnChancePerPoint)
             {
-                float offsetAmount = Random.Range(0, offsetRange);
+                float offsetAmount = Random.Range(-offsetRange, offsetRange);
                 int ranVal = Random.Range(0, enemyList.Count);
                 GameObject randomEnemy = enemyList[ranVal];
                 Instantiate(randomEnemy, spawnPoint.position + (Vector3.left * offsetAmount), Quaternion.identity);

@@ -47,6 +47,7 @@ public class SimpleHealthScript : MonoBehaviour
     {
         dead = true;
         OnDead?.Invoke();
+        
 
         //Destroy(gameObject);
     }

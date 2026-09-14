@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 2276509874922289483}
   - component: {fileID: 3698498044597249410}
   - component: {fileID: 4750427438129300277}
+  - component: {fileID: 2813680612474977994}
   m_Layer: 6
   m_Name: MomObj
   m_TagString: Enemy
@@ -240,8 +241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   targetTag: JovenHit
   damage: 5
-  moveScript: {fileID: 0}
-  obstacleTag: 
 --- !u!114 &4750427438129300277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +256,19 @@ MonoBehaviour:
   healthScript: {fileID: 4891634122540912252}
   rb: {fileID: 1897205733167808821}
   selfCollider: {fileID: 4224935096630349304}
+--- !u!114 &2813680612474977994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5354776084827583186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1f7ccef06bca44e9b17a2b66b14dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  healthScript: {fileID: 4891634122540912252}
 --- !u!1 &7478621282521053437
 GameObject:
   m_ObjectHideFlags: 0

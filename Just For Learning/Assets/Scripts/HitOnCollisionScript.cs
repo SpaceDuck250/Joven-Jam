@@ -7,9 +7,6 @@ public class HitOnCollisionScript : MonoBehaviour
 
     public float damage;
 
-    public SimpleEnemyMove moveScript;
-    public string obstacleTag;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(targetTag))
