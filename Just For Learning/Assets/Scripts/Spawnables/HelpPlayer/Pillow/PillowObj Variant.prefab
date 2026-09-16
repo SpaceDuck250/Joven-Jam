@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillowObj Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6987365337907760909, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 6207293196125270600}
+    - target: {fileID: 6987365337907760909, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
+      propertyPath: objLinkPrefab
+      value: 
+      objectReference: {fileID: 11400000, guid: 21f179887f2c7a74d923503a552d1a00, type: 2}
     - target: {fileID: 7068882746252823471, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.5

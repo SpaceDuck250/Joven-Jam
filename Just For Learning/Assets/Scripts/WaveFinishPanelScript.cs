@@ -9,9 +9,10 @@ public class WaveFinishPanelScript : MonoBehaviour
     public Animator animator;
     public TextMeshProUGUI waveNumberText;
 
-    private void Start()
+    private void Awake()
     {
         waveManagerScript.OnNewWaveStart += OnWaveStart;
+
     }
 
     private void OnDestroy()

@@ -1684,6 +1684,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &922738041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 922738043}
+  - component: {fileID: 922738042}
+  m_Layer: 0
+  m_Name: UpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &922738042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922738041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a114d8cb121df8647ab1858c0f878564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeManager
+  allUpgradeModuleObjects:
+  - {fileID: 8755177669282672638, guid: 3c123ced990439442a456014a703c619, type: 3}
+  allSpawnablesList: []
+  allUpgradeData:
+  - upgradeStored: {fileID: 6936860786539336840, guid: 56420415612168e4db764ad4d14238c7, type: 3}
+    objLink: {fileID: 11400000, guid: f371cf31fdc2f1740bf689e3a78cb58c, type: 2}
+    upgradeName: Shoot Speed increase
+    upgradeDescription: 
+  ownedUpgrades: []
+--- !u!4 &922738043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922738041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.42551, y: 2.67722, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &942259316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +2148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad2ec8ca5c01ce4d891b5f65da7d371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  upgradeManager: {fileID: 922738042}
   selectedSelector: {fileID: 0}
   selectedPlaceable: {fileID: 0}
   havePlaceableOnHand: 0
@@ -3414,6 +3468,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 237996765}
+  - {fileID: 922738043}
   - {fileID: 1294915810}
   - {fileID: 555391254}
   - {fileID: 130852491}

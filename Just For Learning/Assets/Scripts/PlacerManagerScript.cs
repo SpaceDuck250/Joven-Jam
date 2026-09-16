@@ -5,6 +5,8 @@ public class PlacerManagerScript : MonoBehaviour
 {
     public static Action<GameObject, PlaceableStats> OnSelectPlaceable;
 
+    public GeneralUpgradeManager upgradeManager;
+
     public static Action<PlaceableStats, bool> OnPlacePlaceable;
 
     public GameObject selectedSelector;
@@ -58,7 +60,8 @@ public class PlacerManagerScript : MonoBehaviour
         Collider2D collider = Physics2D.OverlapPoint(mousePos, placeableLayer);
         if (collider != null)
         {
-            Instantiate(selectedPlaceable.selfPrefab, mousePos, Quaternion.identity);
+            GameObject newPlaceable = Instantiate(selectedPlaceable.selfPrefab, mousePos, Quaternion.identity);
+            upgradeManager.AddUpgradesToSpawnable(newPlaceable);
             OnPlacePlaceable?.Invoke(selectedPlaceable, true);
             return;
         }
