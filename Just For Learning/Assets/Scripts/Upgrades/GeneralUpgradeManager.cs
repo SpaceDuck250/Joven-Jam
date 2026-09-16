@@ -7,7 +7,7 @@ public class GeneralUpgradeManager : MonoBehaviour
     // use a scriptable objects to store a list of objects
 
 
-    public List<GameObject> allUpgradeModuleObjects = new List<GameObject>();
+    //public List<GameObject> allUpgradeModuleObjects = new List<GameObject>();
     public List<GameObject> allSpawnablesList = new List<GameObject>();
 
     public List<UpgradeData> allUpgradeData = new List<UpgradeData>();
@@ -21,7 +21,7 @@ public class GeneralUpgradeManager : MonoBehaviour
 
     private void Start()
     {
-        OwnEverything();
+        //OwnEverything();
     }
 
     public void OwnEverything()
@@ -46,4 +46,5 @@ public struct UpgradeData
 
     public string upgradeName;
     public string upgradeDescription;
+    public Sprite upgradeSprite;
 }

@@ -111,7 +111,7 @@ PrefabInstance:
       addedObject: {fileID: -6367918065694498123}
     - targetCorrespondingSourceObject: {fileID: 5354776084827583186, guid: d160ee35f4290ab46a798e7216dc5817, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3938871581296978049}
+      addedObject: {fileID: 5724060495801429452}
   m_SourcePrefab: {fileID: 100100000, guid: d160ee35f4290ab46a798e7216dc5817, type: 3}
 --- !u!114 &8343903394142550430 stripped
 MonoBehaviour:
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   healthScript: {fileID: 8343903394142550430}
   enemyBoomPrefab: {fileID: 7663178351317966933, guid: 93cbc3ef4e2fc49428e415fd22431819, type: 3}
---- !u!114 &3938871581296978049
+--- !u!114 &5724060495801429452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,9 +152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8819755366848283952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 377ea4b947870cc4bace48da61be2ff1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c318abe134e31e468162114bf6e859a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  waitTime: 4.5
-  timer: 0
   boomScript: {fileID: -6367918065694498123}

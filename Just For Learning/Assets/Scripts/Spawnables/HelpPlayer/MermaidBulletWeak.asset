@@ -15,7 +15,3 @@ MonoBehaviour:
   damageAmount: 1
   flySpeed: 10
   bulletSprite: {fileID: 21300000, guid: ba08b4ca8784aa2469e326d98e7f57c9, type: 3}
-  selfSelectSprite: {fileID: 21300000, guid: 415ad44f9a897eb4ca4423221b1f0acd, type: 3}
-  selfPrefab: {fileID: 6524437846018696621, guid: cc4cdef27b5e43b49ae43f7f81997a1d, type: 3}
-  selfName: Mermaid
-  selfCost: 50

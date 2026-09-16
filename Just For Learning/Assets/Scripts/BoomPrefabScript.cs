@@ -35,7 +35,6 @@ public class BoomPrefabScript : MonoBehaviour
             //}
 
             Destroy(collider.transform.parent.gameObject);
-            print("Called");
         }
 
     }
