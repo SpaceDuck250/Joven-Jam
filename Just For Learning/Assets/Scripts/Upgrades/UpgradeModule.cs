@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public abstract class UpgradeModule : MonoBehaviour
 {
-    public UpgradeModule nextTierUpgradeModule;
+    //public UpgradeMod nextTierUpgradeModule;
 
     public bool applied = false;
 

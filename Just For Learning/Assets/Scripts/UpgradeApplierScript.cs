@@ -8,10 +8,10 @@ public class UpgradeApplierScript : MonoBehaviour
 
     public List<UpgradeModule> possibleUpgrades = new List<UpgradeModule>();
 
-    public void PassUpgradeModules(List<UpgradeData> upgradeList)
+    public void PassUpgradeModules(List<UpgradeSO> upgradeList)
     {
 
-        foreach (UpgradeData upgradeData in upgradeList)
+        foreach (UpgradeSO upgradeData in upgradeList)
         {
             if (upgradeData.objLink != objLinkPrefab)
             {
@@ -22,7 +22,7 @@ public class UpgradeApplierScript : MonoBehaviour
         }
     }
 
-    private void ApplyUpgrade(UpgradeData upgradeData)
+    private void ApplyUpgrade(UpgradeSO upgradeData)
     {
         UpgradeModule newModule = Instantiate(upgradeData.upgradeStored, transform);
         newModule.Setup(parent);

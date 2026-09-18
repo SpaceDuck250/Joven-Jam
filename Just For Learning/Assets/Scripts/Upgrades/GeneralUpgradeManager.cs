@@ -4,47 +4,73 @@ using System;
 
 public class GeneralUpgradeManager : MonoBehaviour
 {
-    // use a scriptable objects to store a list of objects
+    public List<UpgradeSO> lowTierUpgrades = new List<UpgradeSO>();
+    public List<UpgradeSO> midTierUpgrades = new List<UpgradeSO>();
+    public List<UpgradeSO> highTierUpgrades = new List<UpgradeSO>();
+
+    // When you pick certain upgrades, a new one can appear
+    public List<UpgradeSO> randomizedUpgradesList = new List<UpgradeSO>();
 
 
-    //public List<GameObject> allUpgradeModuleObjects = new List<GameObject>();
-    public List<GameObject> allSpawnablesList = new List<GameObject>();
+    public List<UpgradeSO> ownedUpgrades = new List<UpgradeSO>();
 
-    public List<UpgradeData> allUpgradeData = new List<UpgradeData>();
-
-    public List<UpgradeData> ownedUpgrades = new List<UpgradeData>();
-
-    public delegate void UpgradeHandler(List<UpgradeData> upgradesToApply);
+    public delegate void UpgradeHandler(List<UpgradeSO> upgradesToApply);
     public static event UpgradeHandler OnApplyUpgrade;
-
-    // At start it will pass all objects and bring related upgrades (sort)
 
     private void Start()
     {
-        //OwnEverything();
+        foreach (UpgradeSO upgradeData in lowTierUpgrades)
+        {
+            randomizedUpgradesList.Add(upgradeData);
+        }
+
+        UpgradeOptionSetup.OnPickNewUpgrade += OnPickNewUpgrade;
     }
 
-    public void OwnEverything()
+    private void OnDestroy()
     {
-        foreach (UpgradeData upgradeData in allUpgradeData)
+        UpgradeOptionSetup.OnPickNewUpgrade -= OnPickNewUpgrade;
+
+    }
+
+    private void OnPickNewUpgrade(UpgradeSO heldUpgradeData)
+    {
+        AddNewUpgrade(heldUpgradeData);
+    }
+
+    public void AddNewUpgrade(UpgradeSO newUpgradeData)
+    {
+        ownedUpgrades.Add(newUpgradeData);
+
+        randomizedUpgradesList.Remove(newUpgradeData);
+
+        if (newUpgradeData.nextTierUpgrade != null)
         {
-            ownedUpgrades.Add(upgradeData);
+            randomizedUpgradesList.Add(newUpgradeData.nextTierUpgrade);
+        }
+
+        if (newUpgradeData.previousTierUpgrade != null)
+        {
+            ownedUpgrades.Remove(newUpgradeData.previousTierUpgrade);
         }
     }
 
+    // Called by placer so called when placing
     public void AddUpgradesToSpawnable(GameObject spawnable)
     {
         spawnable.transform.Find("UpgradeApplier").GetComponent<UpgradeApplierScript>().PassUpgradeModules(ownedUpgrades);
     }
 }
 
-[Serializable]
-public struct UpgradeData
-{
-    public UpgradeModule upgradeStored;
-    public PlaceableStats objLink;
+//[Serializable]
+//public class UpgradeData
+//{
+//    public UpgradeModule upgradeStored;
+//    public PlaceableStats objLink;
 
-    public string upgradeName;
-    public string upgradeDescription;
-    public Sprite upgradeSprite;
-}
+//    public string upgradeName;
+//    public string upgradeDescription;
+//    public Sprite upgradeSprite;
+
+
+//}

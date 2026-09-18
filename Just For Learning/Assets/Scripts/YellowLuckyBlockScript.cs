@@ -1,16 +1,13 @@
 using UnityEngine;
+using System;
 
 public class YellowLuckyBlockScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static event Action OnClickYellowLuckyBlock;
 
-    // Update is called once per frame
-    void Update()
+    public void ClickYellowLuckyBlock()
     {
-        
+        OnClickYellowLuckyBlock?.Invoke();
+        Destroy(gameObject);
     }
 }
